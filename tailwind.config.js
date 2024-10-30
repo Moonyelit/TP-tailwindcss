@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
+        body: ['arial', 'sans-serif'],
       },
       fontSize: {
         paragraph: '20px',
