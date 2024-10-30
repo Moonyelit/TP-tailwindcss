@@ -4,8 +4,8 @@
   "description": "Nous utiliserons uniquement Tailwindcss pour réaliser ce TP.",
   "main": "index.js",
   "scripts": {
-  "build:css": "tailwindcss build -i css/input.css -o output.css"
-},
+    "build:css": "tailwindcss build -i css/input.css -o css/output.css"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
