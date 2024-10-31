@@ -35,11 +35,15 @@
         <nav class="flex justify-between items-center">
           <img src="./assets/images/logo.svg" alt="logo" />
 
-          <img src="./assets/images/icon-menu.svg" alt="logo" />
+          <img
+            class="sm:block lg:hidden"
+            src="./assets/images/icon-menu.svg"
+            alt="logo"
+          />
 
           <div
             id="menu"
-            class="hidden flex-col space-x-2 p-4 bg-neutral-off-white text-neutral-very-dark-blue no-underline"
+            class="hidden flex-col bg-neutral-off-white text-neutral-very-dark-blue no-underline lg:block space-x-6"
           >
             <a href="#">Home</a>
             <a href="#">New</a>
@@ -52,68 +56,75 @@
 
       <main>
         <!-- ARTICLE 1 -->
-        <article class="flex flex-col gap-5 mb-8">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3.0" />
-
-          <div class="flex flex-col gap-5 md:flex-row">
-            <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
-              The Bright Future of Web 3.0?
-            </h1>
-
-            <div class="md:flex flex-col gap-5">
-              <p>
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <a
-                href="#"
-                class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
-                >Read more</a
-              >
-            </div>
+        <section class="lg:flex flex-row w-[95%] space-x-6 justify-center">
+          <article class="flex flex-col gap-5 mb-8">
+            <div>
+            <img class="sm:block lg:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="Web 3.0" />
+            <img class="sm:hidden lg:block" src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0"/>
           </div>
-        </article>
 
-        <!--ARTICLE 2-->
-        <section class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue mb-8">
-          <h2 class="text-primary-orange text-3xl font-bold">New</h2>
+            <div class="flex flex-col gap-5 md:flex-row lg:p-4 lg:flex justify-center lg:align-middle">
+              <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
+                The Bright Future of Web 3.0?
+              </h1>
 
-          <a href="#" class="group">
+              <div class="md:flex flex-col gap-5 tracking-wider">
+                <p>
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a
+                  href="#"
+                  class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!--ARTICLE 2-->
+          <section
+            class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue mb-8"
+          >
+            <h2 class="text-primary-orange text-3xl font-bold">New</h2>
+
+            <a href="#" class="group">
+              <article>
+                <h3
+                  class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
+                >
+                  Hydrogen VS Electric Cars
+                </h3>
+
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+            </a>
+            <hr />
             <article>
-              <h3
-                class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
-              >
-                Hydrogen VS Electric Cars
+              <h3 class="text-neutral-off-white text-xl font-bold">
+                The Downsides of AI Artistry
               </h3>
-
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
             </article>
-          </a>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              The Downsides of AI Artistry
-            </h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              Is VC Funding Drying Up?
-            </h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
+            <hr />
+            <article>
+              <h3 class="text-neutral-off-white text-xl font-bold">
+                Is VC Funding Drying Up?
+              </h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </section>
         </section>
 
         <!--ARTICLE 3-->
-        <container class="flex flex-col gap-12 content-center justify-normal">
+        <div class="flex flex-col gap-12 content-center justify-normal">
           <article class="flex flex-row gap-6">
             <div class="flex flex-col gap-2 content-center tracking-wider">
               <img
@@ -137,7 +148,7 @@
                 alt="clavier gros plan IA"
               />
             </div>
-            <div class="flex flex-col gap-2 content-cente tracking-wider>
+            <div class="flex flex-col gap-2 content-cente tracking-wider">
               <h1 class="text-neutral-grayish-blue text-4xl font-bold">02</h1>
               <h2 class="text-lg font-extrabold text-neutral-very-dark-blue">
                 Top 10 Laptops of 2022
@@ -155,11 +166,13 @@
             </div>
             <div>
               <h1 class="text-neutral-grayish-blue text-4xl font-bold">03</h1>
-              <h2 class="text-lg font-extrabold text-neutral-very-dark-blue">The Growth of Gaming</h2>
+              <h2 class="text-lg font-extrabold text-neutral-very-dark-blue">
+                The Growth of Gaming
+              </h2>
               <p>How the pandemic has sparked fresh opportunies .</p>
             </div>
           </article>
-        </container>
+        </div>
 
         <!--FOOTER-->
         <div class="attribution">
