@@ -26,14 +26,16 @@
       }
     </style>
   </head>
-  <body>
-    <main>
-      <!--NAVIGATION-->
-      <header>
-        <nav class="flex items-center justify-between p-4">
-          <img src="assets/images/logo.svg" alt="icone logo" />
+  <body
+    class="bg-neutral-off-white font-body text-paragraph flex flex-col items-center text-neutral-dark-grayish-blue"
+  >
+    <div class="w-[90%] pt-10">
+      <header class="mb-10">
+        <nav class="flex justify-between items-center">
+          <img src="./assets/images/logo.svg" alt="logo" />
 
-          <img src="assets/images/icon-menu.svg" alt="menu burger" />
+          <img src="./assets/images/icon-menu.svg" alt="logo" />
+
           <div
             id="menu"
             class="hidden flex-col space-x-2 p-4 bg-neutral-off-white text-neutral-very-dark-blue no-underline"
@@ -47,96 +49,119 @@
         </nav>
       </header>
 
-      <!--ARTICLE 1-->
-      <article>
-        <img
-          src="assets/images/image-web-3-mobile.jpg"
-          alt="image presentation"
-          class="p-4"
-        />
+      <main>
+        <article class="flex flex-col gap-5 mb-8">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3.0" />
 
-        <h1 class="text-5xl font-bold p-4">The Bright Future of Web 3.0?</h1>
+          <div class="flex flex-col gap-5 md:flex-row">
+            <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
+              The Bright Future of Web 3.0?
+            </h1>
 
-        <p class="text-paragraph p-4">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-
-        <button
-          class="bg-primary-red hover:bg-red-700 text-neutral-off-white font-semibold p-3 text-paragraph m-5"
-        >
-          READ MORE
-        </button>
-      </article>
-
-      <article
-        class="flex flex-col items-stretch bg-neutral-very-dark-blue text-neutral-off-white text-justify p-4 m-5"
-      >
-        <h1 class="text-primary-orange text-3xl font-bold p-4">New</h1>
-
-        <div class="flex flex-col space-y-4 p-4">
-          <div>
-            <h2 class="text-lg font-bold p-2">Hydrogen VS Electric Cars</h2>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <div>
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a
+                href="#"
+                class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
+                >Read more</a
+              >
+            </div>
           </div>
+        </article>
+
+        <section class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue">
+          <h2 class="text-primary-orange text-3xl font-bold">New</h2>
+
+          <a href="#" class="group">
+            <article>
+              <h3
+                class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
+              >
+                Hydrogen VS Electric Cars
+              </h3>
+
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+          </a>
           <hr />
-          <div>
-            <h2 class="text-lg font-bold p-2">The Downsides of AI Artistry</h2>
+          <article>
+            <h3 class="text-neutral-off-white text-xl font-bold">
+              The Downsides of AI Artistry
+            </h3>
             <p>
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
-          </div>
+          </article>
           <hr />
-          <div>
-            <h2 class="text-lg font-bold p-2">Is VC Funding Drying Up?</h2>
+          <article>
+            <h3 class="text-neutral-off-white text-xl font-bold">
+              Is VC Funding Drying Up?
+            </h3>
             <p>
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
             </p>
-          </div>
-        </div>
-      </article>
+          </article>
+        </section>
 
-      <!--ARTICLE 2-->
-      <article>
-        <div>
-          <div>
-            <h1>01</h1>
-            <img
-              src="assets/images/image-retro-pcs.jpg"
-              alt="ordinateur retro/minitel IA"
-            />
-            Reviving Retro PCs What happens when old PCs are given modern
-            upgrades?
-          </div>
-          <div>
-            <h1>02</h1>
-            <img
-              src="assets/images/image-top-laptops.jpg"
-              alt="clavier gros plan IA"
-            />
-            Top 10 Laptops of 2022 Our best picks for various needs and budgets.
-          </div>
-          <div>
-            <h1>03</h1>
-            <img
-              src="assets/images/image-gaming-growth.jpg"
-              alt="Main et une manette qui flotte IA"
-            />
-            The Growth of Gaming How the pandemic has sparked fresh
-            opportunities.
-          </div>
-        </div>
-      </article>
+        <!--ARTICLE 2-->
+        <article>
+          <div class="flex flex-rowm-5">
+            <div class="flex m-5">
+              <img
+                src="assets/images/image-retro-pcs.jpg"
+                alt="ordinateur retro/minitel IA"
+              />
+            </div>
+            <div>
+              <h1>01</h1>
 
-      <!--FOOTER-->
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded
-        by <a href="#">Your Name Here</a>.
-      </div>
-    </main>
+              Reviving Retro PCs What happens when old PCs are given modern
+              upgrades?
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                src="assets/images/image-top-laptops.jpg"
+                alt="clavier gros plan IA"
+              />
+            </div>
+            <div>
+              <h1>02</h1>
+              Top 10 Laptops of 2022 Our best picks for various needs and
+              budgets.
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                src="assets/images/image-gaming-growth.jpg"
+                alt="Main et une manette qui flotte IA"
+              />
+            </div>
+            <div>
+              <h1>03</h1>
+              The Growth of Gaming How the pandemic has sparked fresh
+              opportunities.
+            </div>
+          </div>
+        </article>
+
+        <!--FOOTER-->
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>.
+          Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </main>
+    </div>
   </body>
 </html>
