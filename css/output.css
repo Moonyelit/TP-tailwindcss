@@ -810,14 +810,4 @@ video {
   .lg\:align-middle {
     vertical-align: middle;
   }
-
-  .lg\:hover\:bg-neutral-very-dark-blue:hover {
-    --tw-bg-opacity: 1;
-    background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
-  }
-
-  .lg\:hover\:text-primary-red:hover {
-    --tw-text-opacity: 1;
-    color: hsl(5 85% 63% / var(--tw-text-opacity));
-  }
 }
